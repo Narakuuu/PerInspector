@@ -1,0 +1,15 @@
+syntax = "proto3";
+package monitor.proto;
+
+// Message types for CPU infomation
+message CpuStat{
+    string cpu_name = 1;  //  name
+    float cpu_percent = 2; // Total CPU usage percentage
+    float usr_percent = 3; // User space CPU usage percentage
+    float system_percent = 4; // System space CPU usage percentage
+    float nice_percent = 5; //  Nice (higher-priority) user space CPU usage percentage
+    float idle_percent = 6; // CPU idle percentage
+    float io_wait_percent = 7; // CPU I/O wait percentage
+    float irq_percent = 8; //  CPU hardware interrupt percentage
+    float soft_irq_percent = 9;// CPU software interrupt percentage
+}

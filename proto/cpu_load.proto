@@ -1,0 +1,9 @@
+syntax = "proto3";
+package monitor.proto;  //namespace
+
+// Message types for CPU load averages.
+message CpuLoad { 
+    float load_avg_1 = 1;  // 1-minute load average
+    float load_avg_3 = 2;  // 3-minute load average
+    float load_avg_15 = 3; // 15-minute load average
+  }

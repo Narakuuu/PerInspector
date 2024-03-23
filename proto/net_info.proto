@@ -1,0 +1,11 @@
+syntax = "proto3";
+package monitor.proto;
+
+// Message types for network information
+message NetInfo {
+    string name = 1;  // Network interface name 
+    float send_rate = 2;  // Transmission rate in bytes per second
+    float rcv_rate = 3; // Reception rate in bytes per second
+    float send_packets_rate = 4;  // Transmission rate in packets per second
+    float rcv_packets_rate = 5;  // Reception rate in packets per second
+  }

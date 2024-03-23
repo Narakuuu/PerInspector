@@ -1,0 +1,27 @@
+syntax = "proto3";
+package monitor.proto;
+
+
+// Message type for memory information.
+message MemInfo {
+    float total = 1;  // Total physical memory
+    float free = 2;   // Free memory
+    float avail= 3;   // Available memory to programs
+    float buffers = 4;  // Memory used by buffers
+    float cached = 5;   // Cached memory
+    float swap_cached = 6;  // Swap cached memory
+    float active = 7;  // Active memory
+    float inactive = 8;  // Inactive memory
+    float active_anon = 9; // Active anonymous memory
+    float inactive_anon = 10;  // Inactive anonymous memory
+    float active_file = 11;  // Active file-backed memory
+    float inactive_file = 12;  // Inactive file-backed memory
+    float dirty = 13;  // Dirty memory
+    float writeback = 14;  // Memory waiting to be written back to disk
+    float anon_pages = 15;  // Anonymous pages (not backed by a file)
+    float mapped = 16;  // Mapped file pages
+    float kReclaimable = 17;  // Kernel reclaimable memory
+    float sReclaimable = 18;   // Slab reclaimable memory
+    float sUnreclaim = 19;   // Slab unreclaimable memory
+    float used_percent = 31;  // Percentage of used memory
+  }

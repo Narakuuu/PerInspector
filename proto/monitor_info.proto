@@ -1,0 +1,32 @@
+syntax = "proto3";
+package monitor.proto;
+
+import "google/protobuf/empty.proto";
+import "net_info.proto";
+import "mem_info.proto";
+import "cpu_stat.proto";
+import "cpu_softirq.proto";
+import "cpu_load.proto";
+
+
+
+// Message types for overall monitor information
+message MonitorInfo{
+  string name = 1; //  Monitor instance name
+  repeated SoftIrq soft_irq = 4;  // Soft Interrupt statistics
+  CpuLoad cpu_load = 5; // CPU load averages
+  repeated CpuStat cpu_stat = 6; //CPU statistics
+  MemInfo mem_info = 7;  // Memory information
+  repeated NetInfo net_info = 8; // Network information
+}
+
+
+// Grpc Service  fixed format
+service GrpcManager {
+  // no return 
+  rpc SetMonitorInfo(MonitorInfo) returns (google.protobuf.Empty) {
+  }
+  // no parameters
+  rpc GetMonitorInfo(google.protobuf.Empty) returns (MonitorInfo) {
+  }
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+package monitor.proto;
+
+//Message type for Soft Interrupt statistics.
+message SoftIrq {
+    string cpu = 1; // CPU identifier
+    float hi = 2; // High-priority tasklet softirq
+    float timer = 3; // Timer softirq
+    float net_tx = 4; // Network transmission softirq
+    float net_rx = 5; // Network reception softirq
+    float block = 6; // Block device softirq
+    float irq_poll = 7; // IRQ poll softirq
+    float tasklet = 8; // Tasklet softirq
+    float sched = 9; // Scheduler softirq
+    float hrtimer = 10; // High-resolution timer softirq
+    float rcu = 11; //RCU (Read-Copy-Update) softirq
+  }
