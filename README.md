@@ -54,6 +54,8 @@ cd ~/work/private-node/docker/scripts
 cd work/cmake/display_monitor
 ./display 
 ```
+## 分布式监控流程
+![image](https://github.com/Narakuuu/IMG/blob/main/output.lin.png)
 
 ## 项目展示
 _因为个人计算机性能有限，多开虚拟机有明显卡顿录屏效果不好，这里以监控本地服务器为例，_
