@@ -64,16 +64,23 @@ _因为个人计算机性能有限，多开虚拟机有明显卡顿录屏效果�
 ![image](https://github.com/Narakuuu/IMG/blob/main/result.gif)
 
 ## 致谢
-[@gRPC_QuickStart](https://grpc.io/docs/languages/cpp/quickstart/)：gRPC官网
+[@gRPC_QuickStart](https://grpc.io/docs/languages/cpp/quickstart/)：gRPC快速上手
+
 *一些帮助很大的博客帖子*
+
 [@黄树超](https://www.cnblogs.com/schips/p/10183111.html)：Linux中关于ldconfig的博客
 
 [@美团技术团队](https://tech.meituan.com/2015/02/26/serialization-vs-deserialization.html)：关于序列化和反序列的文章
 
 [@sparkdev](https://www.cnblogs.com/sparkdev/p/10354947.html)：Linux stress命令基本用法
 
+*以及Abseil、cmake、protobuf、gRPC相关的官方build文档*
 
+[@Abseil](https://github.com/abseil/abseil-cpp/blob/master/CMake/README.md)：Abseil CMake Build Instructions
 
+[@protobuf](https://github.com/protocolbuffers/protobuf/blob/main/cmake/README.md)：protobuf CMake Configuration
+
+[@gRPC](https://github.com/grpc/grpc/blob/master/BUILDING.md#build-from-source)：gRPC build from source
 
 
 
