@@ -84,6 +84,9 @@ _因为个人计算机性能有限，多开虚拟机有明显卡顿录屏效果�
 
 [@gRPC](https://github.com/grpc/grpc/blob/master/BUILDING.md#build-from-source)：gRPC build from source
 
+## TODO
+- 界面的美化，还有许多性能信息可以用来监控，部分信息如软中断，使用排序可以看的更直观一点
+
 
 
 
