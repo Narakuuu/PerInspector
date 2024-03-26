@@ -41,7 +41,8 @@ docker build --network host -f base.dockerfile .
 cd rpc/manager/server
 ./server
 
-新建终端
+On a different terminal, run the monitor:
+
 cd ~/work/private-node/docker/scripts
 ./monitor_docker_into.sh
 cd work/cmake/test_monitor/src
