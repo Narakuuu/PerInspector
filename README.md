@@ -17,7 +17,7 @@
 
 ## 项目的启动过程
 * git 环境配置
-* Ubutun git 拉取项目代码
+* Ubuntu git 拉取项目代码
 * 安装docker
 * 通过项目中的docker文件，构建项目镜像
 ```bash
