@@ -1,5 +1,5 @@
 # PerInspector
-基于使用C++实现的分布式Linux性能分析监控系统，通过gPRC框架构建client与sever：cilent生成库供monitor模块和display模块调用并对启用server的服务器进行性能分析和监控，
+使用C++实现的分布式Linux性能分析监控系统，通过gRPC框架构建client与sever：cilent生成库供monitor模块和display模块调用并对启用server的服务器进行性能分析和监控，
 为模拟出真实性能问题使用stress工具进行压测
 
 ## 特点
